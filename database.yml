@@ -1,0 +1,54 @@
+users:
+  tom:
+    username: tom
+    articleIds:
+      - 1
+      - 2
+    commentIds: []
+  tom2:
+    username: tom2
+    articleIds:
+      - 3
+    commentIds:
+      - 1
+articles:
+  '1':
+    id: 1
+    title: hello
+    url: hello
+    username: tom
+    commentIds: []
+    upvotedBy:
+      - tom2
+    downvotedBy: []
+  '2':
+    id: 2
+    title: two
+    url: tweo
+    username: tom
+    commentIds: []
+    upvotedBy:
+      - tom2
+    downvotedBy: []
+  '3':
+    id: 3
+    title: thee
+    url: thee
+    username: tom2
+    commentIds:
+      - 1
+    upvotedBy:
+      - tom2
+    downvotedBy: []
+    comments: []
+nextArticleId: 4
+comments:
+  '1':
+    id: 1
+    body: new comment
+    username: tom2
+    articleId: 3
+    upvotedBy:
+      - tom2
+    downvotedBy: []
+nextCommentId: 2
